@@ -3,7 +3,22 @@ import React from "react";
 import { Main } from "./Card.styled";
 
 const Card = (props) => {
-	return <Main>{props.children}</Main>;
+	return (
+		<Main
+			style={{
+				backgroundColor: props.backgroundColor,
+				padding: props.padding,
+				display: props.display,
+				height: props.height,
+				justifyContent: props.justifyContent,
+			}}
+			displayGrid={props.displayGrid}
+			girdTempCol={props.gridTempCol}
+			gridGap={props.gridGap}
+		>
+			{props.children}
+		</Main>
+	);
 };
 
 export default Card;

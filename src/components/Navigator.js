@@ -14,9 +14,15 @@ const Navigator = (props) => {
 				<AnchorTag href="#">Contact</AnchorTag>
 			</MainLI>
 			<MainLI>
-				<AnchorTag href="#">L</AnchorTag>
-				<AnchorTag href="#">G</AnchorTag>
-				<AnchorTag href="#">F</AnchorTag>
+				<AnchorTag href="#">
+					<i class="devicon-facebook-plain"></i>
+				</AnchorTag>
+				<AnchorTag href="#">
+					<i class="devicon-github-original"></i>
+				</AnchorTag>
+				<AnchorTag href="#">
+					<i class="devicon-linkedin-plain"></i>
+				</AnchorTag>
 			</MainLI>
 		</ContainerNavigatorUL>
 	);

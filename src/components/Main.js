@@ -13,17 +13,14 @@ const MainContainer = styled.div`
 	@media screen and (max-width: 780px) {
 		h1 {
 			font-size: 4rem !important;
-			/* background-color: aliceblue; */
 		}
 
 		h3 {
 			font-size: 1.4rem !important;
-			/* background-color: aliceblue; */
 		}
 
 		p {
 			font-size: 1rem !important;
-			/* background-color: aliceblue; */
 		}
 	}
 `;
@@ -31,7 +28,7 @@ const MainContainer = styled.div`
 const Main = () => {
 	return (
 		<MainContainer>
-			<h1 style={{ fontSize: "8rem", color: "#D1D100" }}>MEET</h1>
+			<h1 style={{ fontSize: "8rem", color: "#fcdb47" }}>MEET</h1>
 			<h3 style={{ fontSize: "3rem", color: "white", marginBottom: "0.8rem" }}>
 				Node.js Developer
 			</h3>
