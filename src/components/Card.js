@@ -15,6 +15,7 @@ const Card = (props) => {
 			displayGrid={props.displayGrid}
 			girdTempCol={props.gridTempCol}
 			gridGap={props.gridGap}
+			id={props.id}
 		>
 			{props.children}
 		</Main>

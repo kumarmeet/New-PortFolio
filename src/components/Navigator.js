@@ -9,19 +9,19 @@ const Navigator = (props) => {
 			</MainLI>
 			<MainLI>
 				<AnchorTag href="#">Home</AnchorTag>
-				<AnchorTag href="#">Projects</AnchorTag>
-				<AnchorTag href="#">About</AnchorTag>
-				<AnchorTag href="#">Contact</AnchorTag>
+				<AnchorTag href="#pro">Projects</AnchorTag>
+				<AnchorTag href="#abt">About</AnchorTag>
+				<AnchorTag href="#cnt">Contact</AnchorTag>
 			</MainLI>
 			<MainLI>
 				<AnchorTag href="#">
-					<i class="devicon-facebook-plain"></i>
+					<i className="devicon-facebook-plain"></i>
 				</AnchorTag>
 				<AnchorTag href="#">
-					<i class="devicon-github-original"></i>
+					<i className="devicon-github-original"></i>
 				</AnchorTag>
 				<AnchorTag href="#">
-					<i class="devicon-linkedin-plain"></i>
+					<i className="devicon-linkedin-plain"></i>
 				</AnchorTag>
 			</MainLI>
 		</ContainerNavigatorUL>

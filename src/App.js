@@ -4,6 +4,9 @@ import Card from "./components/Card";
 import Navigator from "./components/Navigator";
 import Main from "./components/Main";
 import SmallCard from "./components/SmallCard/SmallCard";
+import Form from "./components/Form/Form";
+
+import { AnchorTag } from "./components/Navigator.styled";
 
 const AboutCard = styled.ul`
 	display: flex;
@@ -75,6 +78,7 @@ const App = () => {
 				displayGrid="grid"
 				gridTempCol="repeat(4, 1fr)"
 				gridGap="0.8rem"
+				id="pro"
 			>
 				<SmallCard width="100%">
 					<h4>Student Tracker APIs</h4>
@@ -148,14 +152,16 @@ const App = () => {
 				backgroundColor="#545657"
 				height="80vh"
 				justifyContent="space-evenly"
+				id="abt"
 			>
 				<SmallCard backgroundColor="none" borderRadius="0" color="white">
 					<p>
 						<img
-							src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_f0b606abb6d19089febc9faeeba5bc05/nodejs-development-services.png"
+							src="https://avatars.githubusercontent.com/u/36449204?v=4"
 							alt="Girl in a jacket"
-							width="100"
-							height="100"
+							width="200"
+							height="200"
+							style={{ borderRadius: "50%" }}
 						/>
 					</p>
 					<h4>Meet Kumar Vishwakarma</h4>
@@ -163,17 +169,17 @@ const App = () => {
 						<AboutCard>
 							<li>
 								<a href="#">
-									<i class="devicon-facebook-plain"></i>
+									<i className="devicon-facebook-plain"></i>
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<i class="devicon-github-original"></i>
+									<i className="devicon-github-original"></i>
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<i class="devicon-linkedin-plain"></i>
+									<i className="devicon-linkedin-plain"></i>
 								</a>
 							</li>
 						</AboutCard>
@@ -204,13 +210,47 @@ const App = () => {
 					</p>
 				</SmallCard>
 			</Card>
+
+			<Card
+				display="flex"
+				padding="1rem"
+				justifyContent="space-evenly"
+				id="cnt"
+			>
+				<SmallCard
+					backgroundColor="none"
+					borderRadius="0"
+					color="white"
+					width="44%"
+				>
+					<p style={{ textAlign: "justify" }}>
+						Since styled-components allows you to use arbitrary input as
+						interpolations, you must be Since styled-components allows you to
+						use arbitrary input as interpolations. Since styled-components
+						allows you to use arbitrary input as interpolations, you must be
+						Since styled-components allows you to use arbitrary input as
+						interpolations
+						<br />
+						<br />
+						Since styled-components allows you to use arbitrary input as
+						interpolations, you must be Since styled-components allows you to
+						use arbitrary input as interpolations. Since styled-components
+						allows you to use arbitrary input as interpolations, you must be
+						Since styled-components allows you to use arbitrary input as
+						interpolations
+					</p>
+				</SmallCard>
+				<SmallCard
+					backgroundColor="none"
+					borderRadius="0"
+					color="white"
+					width="46%"
+				>
+					<Form />
+				</SmallCard>
+			</Card>
 		</>
 	);
 };
-
-// display: grid;
-//     grid-template-columns: repeat(4, 1fr);
-//     grid-gap: 0.8rem;
-//     padding: 2rem;
 
 export default App;
